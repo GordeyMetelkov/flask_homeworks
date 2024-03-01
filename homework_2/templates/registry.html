@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block first_block %}
+    <form action="{{ url_for('registry') }}" method="post">
+        <input type="text" name="name" placeholder="Имя">
+        <input type="email" name="email" placeholder="email">
+        <input type="submit" value="Отправить">
+    </form>
+{% endblock %}
